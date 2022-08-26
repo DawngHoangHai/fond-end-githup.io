@@ -1,0 +1,48 @@
+/* độ ưu tiên của thuộc tính : !important -> id -> class -> thẻ */
+/* nếu có nhiều !important thì lấy cái mạnh -> yếu */
+p{
+    color: green;
+}
+.bg-black{
+    background: black ; /*thẻ màu nền */
+    color: white !important;
+}
+h1{
+    /* thẻ màu sắc của chữ cái */
+    color: yellow;
+}
+.bigsize{
+    /* thẻ độ to của chữ cái  */
+    font-size: 50px;
+}
+#logo{
+    color: red !important ; 
+    background: yellow ;
+    /* có 2 important thì lấy cái id (mạnh nhất) */
+}
+/* class ngoài hay class trong điều nhận thuộc tính */
+.con{
+    color: blue;
+}
+/* class cha trỏ đến con thì mình thuộc tính đó mới nhận */
+.cha .con{
+    color: aqua;
+}
+/* dùng chung 1 thuộc tính chung 2 class */
+.cha ,.con{
+    background: red;
+}
+.thuoctinh{
+    color: white;   /* màu chữ*/
+    background: black;  /* màu nền*/
+    font-size: 50px;    /* cỡ chữ*/
+    font-weight: 700;   /* độ rộng của chữ*/
+    font-style: italic; /* nghiêng của chữ */
+    text-decoration: underline; /* gạch chân*/
+    letter-spacing: 20px;/* độ dãn của chữ cái*/
+    line-height: 100px;/* độ rộng của các chữ*/
+}
+.thuoctinh2{
+    cursor: grab;/* hiển thị con trỏ chuột*/
+    text-decoration: none;/* xóa gạch chân chữ*/
+}

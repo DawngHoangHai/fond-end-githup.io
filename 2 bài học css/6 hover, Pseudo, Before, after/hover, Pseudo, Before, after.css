@@ -1,0 +1,39 @@
+li{
+    list-style: none;
+    margin: 1rem;
+}
+/* tiền tố trước (luôn có content:"text",nếu klaf ảnh thì để rỗng ) */
+
+.one::before{
+/*    cách thêm icon vào trước đoạn văn 
+        font-family: "Font Awesome\ 5 Brands";
+        mã là brands 
+*/
+    content : "\f09a";
+    color : aqua;
+    font-family: "Font Awesome\ 5 Brands";
+}
+/* tiền tố sau  (luôn có content:"text",nếu klaf ảnh thì để rỗng ) */
+.one::after{
+    /* cách thêm chữ vào đoạn văn sau  */
+    content: " END !!!";
+    color: aqua;
+}
+.two::after{
+    /* đây là cách cho ảnh vào tiền tố  */
+    content: "";
+    background-image: url("https://i.pinimg.com/736x/af/de/15/afde158de9df5b66ad75831aeda00f74.jpg");
+    background-size: 100%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+/* di chuột vào sx thay đổi giao diện  */
+p:hover{
+    background-color: yellow;
+    display: inline-block;
+    height: 30px;
+  
+    cursor: grab;
+}

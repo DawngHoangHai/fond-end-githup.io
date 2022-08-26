@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InPut</title>
+</head>
+<body>
+    <form action="" method="">
+
+        <!-- thẻ input nhập chữ -->
+        <p>Số Điện Thoại</p>
+        <input type="number" name="Số Điện Thoại" id="" value="" placeholder="Tài Khoản">
+        
+        
+        <p>Thẻ nhập Nhiều </p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="địa chỉ">
+ 
+        </textarea>
+        <!-- thẻ input nhập passwword -->
+        <p>PassWord</p>  
+        <input type="password" name="PassWord" id="" value="" placeholder="PassWord">
+        
+        <!-- thẻ bấm vào để nhận -->
+        <button>
+            click me <!--có thể cho cái j vào cũng được-->
+        </button>
+
+        <!-- thẻ <input type="button" value="">chỉ click được text -->
+        <input type="button" value="click me">
+
+        <!-- thẻ radio áp dụng trong chọn giới tính  -->
+        <div>
+            <p>Giới Tính</p><!-- sử dụng label for với name-->
+            <input type="radio" id="a" name="genera">
+            <label for="a">Nam</label>
+            <input type="radio" id="b" name="genera">
+            <label for="b">Nữ</label>
+            <input type="radio" ="genera" checked> 
+            <label for="c">Khác</label>
+        </div>
+
+        thẻ range
+        <input type="range" name="" id="" value="2" max="100" min="0">
+
+        <!-- thẻ checkbox  -->
+        <div>
+            <p>Lựa Chọn Đáp Án</p><!-- sử dụng label for với id-->
+            <input type="checkbox" name="" id="A">
+            <label for="A">Đáp Án  A</label>
+            <input type="checkbox" name="" id="B">
+            <label for="B">Đáp Án  B</label>
+            <input type="checkbox" name="" id="C">
+            <label for="C">Đáp Án  C</label>
+            <input type="checkbox" name="" id="D" checked>
+            <label for="D">Đáp Án  D</label>
+        </div>
+
+        <!-- thẻ <select name="" id="">
+            <option value=""></option>
+        </select> -->
+        <div>
+            thẻ select option 
+            <select name="ngôn ngữ" id="">
+                <option value="" hidden>Chọn Ngôn Ngữ</option>
+                <option value="">Việt nam</option>
+                <option value="">china</option>
+                <option value="">campuchia</option>
+                <option value="">thai lan</option>
+            </select>
+        </div>
+        
+        <!-- thẻ <optgroup></optgroup> -->
+        <div>
+            thẻ optgroup 
+            <select name="" id="">
+                <optgroup label="Trường Kinh Công">
+                    <option value="" hidden>Lựa Chọn Của bạn</option>
+                    <option value="">Ngành may</option>
+                    <option value="">Ngành kế toán</option>
+                    <option value="">Ngành cntt</option>
+                    <option value="">Ngành oto</option>
+                </optgroup>
+                <optgroup label="Trường Kinh Kĩ">
+                    <option value="">Ngành Điện</option>
+                    <option value="">Ngành Cơ khói</option>
+                    <option value="">Ngành CNTT</option>
+                    <option value="">Ngành kĩ Thuật số</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            thẻ file
+            <input type="file" name="" id="" >
+            <input type="date" name="" id="" >
+            <input type="time" name="" id="">
+            <input type="datetime-local" name="" id="">
+            <input type="week" name="" id="">
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>PassWord</td>
+                    <td><input type="password" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>File</td>
+                    <td><input type="file" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td><input type="datetime" name="" id=""></td>
+                </tr>
+            </table>
+        </div>
+        
+    </form>
+</body>
+</html>

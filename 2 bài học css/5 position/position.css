@@ -1,0 +1,37 @@
+body{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.position{
+    width: 500px;
+    height: 500px;
+    background: aqua;
+    position: relative ;
+    bottom: 10px;
+    left: 15px;
+}
+.parent{
+    width: 250px;
+    height: 250px;
+    background: rgba(221, 236, 9, 0.788);
+    position: absolute;
+    right: 10px;
+    bottom: 16px;
+    
+}
+.childen{
+    width: 125px;
+    height: 125px;
+    background: rgba(236, 9, 9, 0.788);
+    position: absolute;
+    right: 0px;
+}
+
+/*.position : thay đổi cha nhưng con vẫn dữ nguyên .......
+        bản thân trình duyệt web là 1 position relative 
+        1 static : là vị trí mặc định của trình duyệt 
+        2 relative : 
+        3 absolute : căn theo thuôc tính relative gần nhất và chứa nó 
+        4 fixed : 
+        top , left ,right ,botton(chỉ nhận thuộc tính 2 3 4)*/

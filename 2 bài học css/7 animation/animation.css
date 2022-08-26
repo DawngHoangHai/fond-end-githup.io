@@ -1,0 +1,80 @@
+/*
+học về trasition:
+- short syntax(viết ngắn)
+transition :
++ property: loại animation
++ duration : thời gian hiệu ứng chạy
++ timing-function: kiểu animation 
++ delay : sau bấm start bao nhiêu lâu thì chạy 
+
+
+- full syntax(viết đủ)
++ transition-property : color , 
++ transition-duration: time(secound)
++ trasition-timing-function:  animation type
++ trasition-delay: time
+*/
+.p{
+    font-size: 30px;
+    color:red;
+    background-color: yellow;
+    display: inline-block;
+}
+.p:hover{
+    cursor: pointer;
+    color:white;
+    background-color:black;
+    transition:  all 2s ;
+    /* có 4 thuộc tính  */
+}
+
+/*học về transform(thay đổi kích thước  hình dạng) 
+transform :
++ scale(numbers) : độ lớn hơn so với numbers
++ rotate() :xoay bao nhiêu độ
++ có nhiều kiểu có thể lên f12 rồi chỉnh
+*/
+
+.img{
+    width: 50px; 
+    animation: xoayvong linear 3s infinite ;
+}
+.img:hover{
+    cursor: not-allowed;
+    transform: rotate(311deg);
+    transform: scale(2);
+    transition: all 2s ;
+}
+.text{
+    display: inline-block;
+    animation: xoayvong linear 1s infinite ;
+    /*animation : tên định nghĩa - kiểu animation - thời gian - vô hạn*/
+}
+@keyframes xoayvong {
+    from{
+        transform: rotate(0deg);
+        color: aqua;
+    }
+    to{
+        transform: rotate(360deg);
+        color: yellow;
+    }
+}
+.text2{
+    display: inline-block;
+    animation: xoayxoay cubic-bezier(0.68, -0.55, 0.27, 1.55) 2s infinite;
+}
+@keyframes xoayxoay {
+    0%{
+        transform: rotate(0deg);
+        color: red;
+    }
+    50%{
+        transform: rotate(180deg);
+        color: orange;
+    }
+    100%{
+        transform: rotate(360deg);
+        color: aqua;
+    }
+}

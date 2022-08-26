@@ -1,0 +1,45 @@
+.div{
+    width: 100px;
+    height:  100px;
+    background: yellow;
+    margin: 100px;
+    padding: 50px ;
+    /* box-sizing: border-box; */
+}
+.input{
+    padding: 0px 100px 0 0;
+    border: 1px solid red;
+    border-radius:  10px;
+}
+.h1{
+    display: inline-block; 
+    /* có những loại display nào : 
+    none : biến mất
+    inline : bao gồm trong chữ 
+    inline-block : bao gồm trong chữ(thêm được width ,height) */
+}
+.B{
+    display: inline-block;
+    /* width: 30px; */
+    height: 30px;
+    background: black;
+    color: aliceblue;
+    flex: 1; 
+    /* sẽ làm cho kích tất cả thằng con + lại bằng thằng cha theo chiều đã chọn, số là theo tỉ lệ  */
+    /* flex-wrap: ; cắt khối xuống  */
+    
+}
+.danhsach{
+    list-style: circle; /*kiểu */
+}
+
+/* học về display;flex */
+.flex{
+    height: 100px;
+    display: flex; /* trong class cha làm cho class con lên hết 1 dòng*/
+    background: yellow;
+    flex-direction: row ; /*  chiều của flexx column : dọc,  row  ngang */
+    justify-content: space-between; /* căn theo chiều đã chọn*/
+    align-items: center;/* căn chỉnh chiều ngược lại chiều đã chọn*/
+}
+/* khi thằng con muấn khác biết thì ta dùng  với thằng cha ở flex align-self: kiểu ; */
