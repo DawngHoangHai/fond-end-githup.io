@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+.menu>li::before{
+    content: "\f0da";
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+    color: aliceblue;
+}
+ul>li{
+    list-style: none;
+    width: 10rem;
+    height: 1.5rem;
+    background-color: #52d152;
+    color: black;
+    border: 1px solid  #2f9b2f;
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    left: 9.9em;
+    top: 0em;
+    display: none;
+}
+ul>li:hover{
+    cursor: pointer;
+    background: #226622;
+    color:aliceblue;
+    /* border: 1px solid yellowgreen; */
+}
+ul>li:hover .sub-menu{
+    display: block;
+}
+
+.product{
+    width: 16rem;
+    height: 19rem;
+    background-color: rgb(221, 226, 226);
+    border: 3px solid black
+}
+.img-dog{
+    position: relative;
+}
+.img-dog img{
+    width: 100%;
+    height: 15rem;
+}
+.sale{
+    width: 50%;
+    background-color: pink;
+    color: red;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    font-size: 26px;
+}
+.gia-goc{
+    font-size: 26px;
+    text-decoration: line-through;
+    color: black;
+}
+.gia-sale{
+    font-size: 26px;
+    color: red;
+}
+
+.block-phone{
+    width: 16rem;
+    height: 20.5rem;
+    /* background: aqua; */
+    box-shadow: -3px 9px 20px 0px;
+    border: 1px solid;
+}
+.img-phone{
+    width: 100%;
+    /* background-color: #2f9b2f; */
+    height: 16em;
+    position: relative;
+}
+.img-phone img{
+    width: 100%;
+    height: 16em;
+    object-fit: cover;
+    padding: 30px;
+}
+.genere{
+    width: 3em;
+    height: 1.5em;
+    background-color: red;
+    border-left: 4px solid yellow;
+    line-height: 1.5em;
+    text-align: center;
+    color: white;
+}
+.HOT{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.sale-phone{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.title{
+    text-align: center;
+    font-family: system-ui;
+    font-size: 17px;
+    padding: 0px 20px;
+}
+.pice{
+    color: red;
+    font-weight: 700;
+    padding: 0 1em;
+}
+.pice .pice-orgin{
+    text-decoration: line-through;
+}
