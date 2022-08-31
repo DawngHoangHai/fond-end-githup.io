@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(194, 198, 201);
+}
+p{
+    font-size: 25px;
+}
+.main1 , .main2{
+    width: 30rem;
+    height: auto;
+    margin: 1rem auto;
+    border: 2px dashed yellow;
+    border-radius: 1rem;
+}
+.margin{
+    margin: 10px 0px;
+}
+.logo{
+    width: 100%;
+    height: 3em;
+    background-color: aqua;
+    font-size: 20px;
+    line-height: 3rem;
+}
+.navtive{
+    width: 100%;
+    height: 2em;
+    background-color: aquamarine;
+    line-height: 2em;
+}
+.header{
+    width: 100%;
+    height: 4em;
+    background-color: blue;
+    line-height: 4em;
+}
+.body{
+    width: 100%;
+    height: 20em;
+    display: flex;
+}
+.body1{
+    width: 30%;
+    background-color: chocolate;
+    height: 100%;
+    margin-right: 5px;
+    line-height: 20em;
+}
+.body2{
+    width: 70%;
+    background-color: yellowgreen;
+    height: 100%;
+    margin-left: 5px;
+    line-height: 20em;
+}
+.footer{
+    width: 100%;
+    height: 2em;
+    background-color: chartreuse;
+    line-height: 2em;
+}
+.intro-textarea{
+    width: 100%;
+    height: 4em;
+    background-color: blue;
+    text-align: center;
+    line-height: 4em;
+}
+.block-main{
+    width: 100%;
+    height: 20em;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 20em;
+}
+.box1 ,.box2 ,.box3{
+    width: 30%;
+    height: 100%;
+}
+.logo, .navtive, .header, .body1, .body2,.footer ,.intro-textarea,.box1,.box2,.box3{
+    background-color: rgb(111, 113, 116);
+    text-align: center;
+}
