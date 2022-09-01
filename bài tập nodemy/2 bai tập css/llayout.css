@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.block-main1{
+    width: 25rem;
+    border: 1px dotted black;
+    /* height: 17rem; */
+    margin: 1rem auto;
+    /* position: relative; */
+}
+.logo{
+    width: 100%;
+    height: 2em;
+    background-color: rgb(136, 130, 130);
+}
+#flex1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.block-main1 .header-blaner{
+    width: 70%;
+    height: 3em;
+    /* background-color: rgb(95, 118, 138); */
+}
+.block-main1 .body-area{
+    background-image: url("https://media.npr.org/assets/img/2021/08/06/dog-4415649-18eab39206426b985f7a5f69e3146a2cd1a56c0d-s1100-c50.jpg");
+
+    background-size: 100%;
+}
+.block-main1 .body-area{
+    width: 70%;
+    height: 10em;
+    background-color: blue;
+}
+.footer{
+    width: 100%;
+    height: 2em;
+    background-color: brown;
+}
+.margin{
+    background-color: rgb(136, 130, 130);
+    text-align: center;
+    margin: 5px 0%;
+}
+.block-main2{
+    width: 25rem;
+    border: 1px dotted black;
+    /* height: 17rem; */
+    margin: 1rem auto;
+}
+.block-main2 .body{
+    width: 100%;
+    /* background-color: aqua; */
+}
+.body1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    height: 10em;
+    width: 100%;
+}
+.body1>div{
+    width: 5em;
+    height: 4em;
+    background-color: rgb(136, 130, 130);
+    background-image: url("https://dogily.vn/wp-content/uploads/2019/02/hinh-anh-cho-Pug-dogily-petshop-15.jpg");
+    background-size: 100%;
+}
+.box-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0%;
+}
+.box-main div{
+    background-color: rgb(136, 130, 130);
+    width: 30%;
+    height: 5em;
+}
