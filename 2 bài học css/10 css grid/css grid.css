@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px;
+    display: grid;
+    /* khai báo xem bao nhiêu cột dọc*/
+
+    /* sử dụng độ dài tương đối */ 
+    /* grid-template-columns: 1fr 2fr 1fr;*/
+    grid-template-columns: repeat(3,1fr);/*viết tắt*/
+    grid-template-columns: 1fr 2fr 1fr;
+    /* khai báo xem bao nhiêu hàng ngang */
+
+    /* sử dụng độ dài tuyệt đối */
+    /* grid-template-rows: 100px 200px 10px; */
+     /* grid-template-rows: 1fr 2fr 1fr; */
+
+    grid-auto-rows: 200px; /*set mặc định cho row*/
+
+    /*set chiều bé nhất mặc định cho row*/
+    grid-auto-rows: minmax(60px,auto); 
+    /* minmax(<kích thước bé nhất>,<kích thước lơn nhất>) */
+
+    
+}
+.container .item,.container2 .item2 ,.container3 .item3{
+    background-color: yellow;
+    border: 1px solid black;
+    min-height: 50px;
+}
+.container2{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-auto-columns: 100px;
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows:minmax(60px,auto) ;
+}
+.item_2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item_5{
+    /* grid-row-start: 2;
+    grid-row-end:4 ;
+    grid-column-start: 3;
+    grid-column-end: 4; */
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+.item_4{
+    grid-column: 2/3;
+    grid-row: 2/5;
+}
+.container3{
+    display: grid;
+    margin: 20px;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: repeat(4,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    /* grid-auto-rows: 200px; */
+    grid-template-areas: 
+    "aa aa bb"
+    "aa aa bb"
+    "cc cc cc"
+    "dd dd dd";
+
+    /* dùng cái này để tạo khoảng trắng giữa các khối dọc,ngang */
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.container3 .item_6{
+    grid-area: dd;
+}
+.container3 .item_1{
+    grid-area: aa;
+}
+.container3 .item_2{
+    grid-area: bb;
+}
